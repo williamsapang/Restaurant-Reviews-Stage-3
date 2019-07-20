@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Tricks -->
+  <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
+  <link rel="preload" href="dist/css/styles.min.css" as="style" onload="this.rel='stylesheet'">
+  <link rel="preload" href="css/preload.css" as="style" media="(min-width: 992px)" onload="this.rel='stylesheet'">
+  <meta content="The best place to get your Restaurant information" name="description">
+  <link href="/site.webmanifest" rel="manifest">
+  <meta content="#da532c" name="msapplication-TileColor">
+  <meta content="#252831" name="theme-color">
+  <title>Restaurant Info</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+</head>
+<body class="inside">
+  <header>
+    <nav aria-label="Breadcrumb" role="navigation">
+      <h1>Restaurant Reviews</h1>
+    </nav>
+    <div>
+      <ul aria-label="Breadcrumb" id="breadcrumb" >
+        <li><a aria-label="Home" href="/">Home</a></li>
+      </ul>
+    </div>
+  </header>
+  <main role="main" id="maincontent">
+    <section id="map-container">
+      <div role="application" id="map"></div>
+    </section>
+    <section id="restaurant-container">
+      <h2 tabindex="0" id="restaurant-name"></h2>
+      <img tabindex="0" id="restaurant-img">
+      <p tabindex="0" id="restaurant-cuisine"></p>
+      <p tabindex="0" id="restaurant-address"></p>
+      <table align="center" tabindex="0" id="restaurant-hours"></table>
+    </section>
+    <section  id="reviews-container">
+      <ul id="reviews-list"></ul>
+    </section>
+    <form class="myForm" action="">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input aria-label="Enter your name" type="text" id="name" name="name" placeholder="Your name..">
+      </div>
+      <div class="form-group">
+        <label for="res_id">Restaurant</label>
+          <select id="res_id" aria-label="Select Restorant" name="restaurant_id">
+            <option value="1" selected="selected">Mission Chinese Food</option>
+            <option value="2" >Emily</option>
+            <option value="3" >Kang Ho Dong Baekjeong</option>
+            <option value="4" >Katz's Delicatessen</option>
+            <option value="5" >Roberta's Pizza</option>
+            <option value="6">Hometown BBQ</option>
+            <option value="7">Superiority Burger</option>
+            <option value="8">The Dutch</option>
+            <option value="9">Mu Ramen</option>
+            <option value="10">Casa Enrique</option>
+          </select>
+      </div>
+      <div class="form-group">
+        <label>Rate</label>
+          <select aria-label="Select rate" id="rate" name="rate">
+            <option value="1" selected="selected">1</option>
+            <option value="2" >2</option>
+            <option value="3" >3</option>
+            <option value="4" >4</option>
+            <option value="5" >5</option>
+          </select>
+      </div>
+      <div class="form-group">
+        <label>Comment</label>
+          <textarea aria-label="Enter your comment" id="subject" name="subject" placeholder="Write Review" maxlength="500"></textarea>
+        </div>
+        <button type="button" value="Submit" onclick="addReview()">Submit</button>
+      </form>
+  </main>
+  <footer id="footer">
+    Copyright (c) 2019 <a href="/"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
+  </footer>
+  <script>
+			var head = document.getElementsByTagName( 'head' )[ 0 ]
+				, insertBefore = head.insertBefore
+			;
+			head.insertBefore = function( newElement, referenceElement ) {
+				if( newElement.href && ~ newElement.href.indexOf( '//fonts.googleapis.com/css?family=Roboto' ) )
+					return;
+				insertBefore.call( head, newElement, referenceElement );
+			};
+		</script>
+  <script type="application/javascript" charset="utf-8" src="node_modules/idb/lib/idb.js"></script>
+  <script type="application/javascript" src="js/dbhelper.js"></script>
+  <script type="text/javascript" src="js/restaurant_info.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?libraries=places&callback=initMap"></script>
+</body>
+</html>

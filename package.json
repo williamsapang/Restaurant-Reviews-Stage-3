@@ -1,0 +1,53 @@
+{
+  "name": "Restaurant-Reviews",
+  "private": true,
+  "version": "0.0.0",
+  "description": "a Sails application",
+  "keywords": [],
+  "dependencies": {
+    "include-all": "^1.0.0",
+    "rc": "1.0.1",
+    "sails": "^0.12.13",
+    "sails-disk": "~0.10.9",
+    "babel-core": "^6.26.0",
+    "babelify": "^8.0.0",
+    "browserify": "^15.0.0",
+    "del": "^2.0.2",
+    "es6-promise": "^3.0.2",
+    "idb": "^2.0",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0",
+    "watchify": "^3.9.0",
+    "webpack": "^4.1.1",
+    "grunt": "^1.0.1",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-responsive-images": "^1.10.1",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^8.0.0-beta.2",
+    "gulp-clean-css": "^3.9.3",
+    "gulp-concat": "^2.6.1",
+    "gulp-html-replace": "^1.6.2",
+    "gulp-image": "^4.3.0",
+    "gulp-responsive": "^2.9.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-babel-minify": "^0.2.0",
+    "gulp-util": "^3.0.8",
+    "run-sequence": "^1.2.2"
+  },
+  "scripts": {
+    "debug": "node debug app.js",
+    "start": "node app.js"
+  },
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/amerkrlicbegovic/Restaurant-Reviews.git"
+  },
+  "author": "Amer Krlicbegovic",
+  "linkedIn": "https://www.linkedin.com/in/amerkrlicbegovic/",
+  "email": "amer.krlicbegovic@gmail.com",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-imagemin": "^4.1.0"
+  }
+}

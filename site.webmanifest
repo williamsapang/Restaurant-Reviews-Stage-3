@@ -1,0 +1,8 @@
+{
+    "name": "RESTAURANT REVIEWS",
+    "short_name": "RESTAURANT R",
+	"description": "A simple web restaurant reviews web site",
+    "theme_color": "#252831",
+    "background_color": "#fff",
+     "display": "fullscreen"
+}
