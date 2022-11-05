@@ -7,7 +7,7 @@
   "dependencies": {
     "include-all": "^1.0.0",
     "rc": "1.0.1",
-    "sails": "^0.12.13",
+    "sails": "^1.5.3",
     "sails-disk": "~0.10.9",
     "babel-core": "^6.26.0",
     "babelify": "^8.0.0",
@@ -22,7 +22,7 @@
     "grunt": "^1.0.1",
     "grunt-contrib-connect": "^1.0.2",
     "grunt-responsive-images": "^1.10.1",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0-beta.2",
     "gulp-clean-css": "^3.9.3",
     "gulp-concat": "^2.6.1",
@@ -47,7 +47,7 @@
   "linkedIn": "https://www.linkedin.com/in/amerkrlicbegovic/",
   "email": "amer.krlicbegovic@gmail.com",
   "devDependencies": {
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-imagemin": "^4.1.0"
   }
 }
